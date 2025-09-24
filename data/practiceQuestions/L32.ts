@@ -99,7 +99,7 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
         D: '支付完款項後即結束。'
       },
       correctAnswer: 'C',
-      explanation: '對第三方業者的監督是一個持續的過程，金融機構需要確保其在整個合作期間都符合契約要求和相關規範，並非一次性的任務。'
+      explanation: '對第三方業者的監督是一個持續的過程，金融機構需要確保其在整個合作期間都符合契約要求和相關規範，而非一次性的任務。'
     },
     {
       question: '何謂「生成式AI」？',
@@ -1336,10 +1336,10 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
     {
       question: '下列何者是可解釋性與透明性的主要區別？',
       options: {
-        A: '可解釋性更關注「為何」做出某個決策，透明性更關注「如何」運作。',
-        B: '可解釋性是法律要求，透明性是道德要求。',
-        C: '可解釋性針對客戶，透明性針對內部員工。',
-        D: '兩者沒有任何區別。'
+        A: '兩者沒有區別。',
+        B: '可解釋性更關注「為何」做出某個決策，透明性更關注「如何」運作。',
+        C: '可解釋性是法律要求，透明性是道德要求。',
+        D: '可解釋性針對客戶，透明性針對內部員工。'
       },
       correctAnswer: 'A',
       explanation: '可以這樣理解：透明性是打開汽車的引擎蓋，讓你看見引擎的構造（如何運作）；可解釋性是提供一個儀表板，告訴你引擎現在為何會發出這個聲音（為何決策）。'
@@ -1398,7 +1398,7 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
         C: '治理 (G)',
         D: '經濟 (E)'
       },
-      // Fix: Corrected typo 'S' to the correct option key 'B'.
+      // Fix: Corrected an invalid correctAnswer 'S' to the valid option key 'B'.
       correctAnswer: 'B',
       explanation: '普惠金融和縮小數位落差都是旨在減少社會不平等、促進包容性成長的措施，屬於永續發展中的「社會(S)」範疇。'
     },
@@ -1425,7 +1425,7 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
       explanation: '乾淨、高品質的資料可以讓模型更快地收斂，減少因數據品質不佳而需要反覆進行的、耗費能源的訓練。同時，去除不必要的資料也能減少傳輸時的能耗。'
     },
     {
-      question: '借重能源效能監控系統，實時監測AI系統的能源消耗，這屬於永續發展落實方式中的？',
+      question: '借重能源效能監控系統，實時監測AI系統之能源消耗，這屬於永續發展落實方式中的？',
       options: {
         A: '改進模型與演算法',
         B: '智慧控管能效',
