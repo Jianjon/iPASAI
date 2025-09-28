@@ -279,7 +279,7 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
         D: '避免與外部客戶進行任何溝通。'
       },
       correctAnswer: 'B',
-      explanation: 'AI治理架構的核心目標，就是將AI的發展納入一個有序、可控的框架內，確保其符合法規、倫理和企業戰略，並在出現問題時有人負責。'
+      explanation: 'AI治理架構的核心目標，就是將AI的發展納入一個有序、可控的框架内，確保其符合法規、倫理和企業戰略，並在出現問題時有人負責。'
     },
     {
       question: '金融機構設立一個由副總經理級以上主管領導的「AI治理委員會」，此舉落實了指引中的哪項建議？',
@@ -491,6 +491,7 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
         C: '救濟選項',
         D: '對抗性攻擊'
       },
+
       correctAnswer: 'C',
       explanation: '提供申訴、反饋或人工複核等救濟選項，是保障受AI決策不利影響者權益的重要機制，也是公平性原則的具體體現。'
     },
@@ -1175,7 +1176,7 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
         D: '可以完全避免所有風險。'
       },
       correctAnswer: 'C',
-      explanation: '公開、誠實的溝通是建立信任的唯一途徑。透過落實透明性，金融機構可以主動管理客戶的期望，化解其對AI「黑盒子」的恐懼，從而提高AI服務的接受度。'
+      explanation: '公開、誠實的溝通是建立信任的唯一途徑。透過落實透明性，金融機構可以主動管理客戶的期望，化解其對AI「黑盒子」的恐懼，從而提高AI服務的接受度與信任感。'
     },
     {
       question: '一家銀行推出AI理財顧問服務，在其使用者條款中說明AI會如何使用客戶的財務數據，並揭露演算法可能存在的限制。這個做法體現了哪個階段的透明性落實？',
@@ -1229,8 +1230,8 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
         C: '透明性是技術問題，可解釋性是法律問題。',
         D: '透明性是可選的，可解釋性是必須的。'
       },
-      correctAnswer: 'B',
-      explanation: '雖然兩者相關，但指引對其有明確的區分：透明性主要旨在向「外部」利害關係人提供資訊以建立信任；可解釋性主要旨在讓「內部」人員和主管機關能夠理解和審計模型的決策邏輯。'
+      correctAnswer: 'A',
+      explanation: '可以這樣理解：透明性是打開汽車的引擎蓋，讓你看見引擎的構造（如何運作）；可解釋性是提供一個儀表板，告訴你引擎現在為何會發出這個聲音（為何決策）。'
     }
   ],
   L32602: [
@@ -1398,7 +1399,7 @@ export const L32_PRACTICE: Record<string, PracticeQuestion[]> = {
         C: '治理 (G)',
         D: '經濟 (E)'
       },
-      // Fix: Corrected an invalid correctAnswer 'S' to the valid option key 'B'.
+      // FIX: Corrected an invalid correctAnswer 'S' to the valid option key 'B'.
       correctAnswer: 'B',
       explanation: '普惠金融和縮小數位落差都是旨在減少社會不平等、促進包容性成長的措施，屬於永續發展中的「社會(S)」範疇。'
     },

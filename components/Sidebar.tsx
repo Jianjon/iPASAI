@@ -3,6 +3,7 @@ import type { Subject, Topic } from '../types';
 import ChevronDownIcon from './icons/ChevronDownIcon';
 import ChevronsLeftIcon from './icons/ChevronsLeftIcon';
 import ChevronsRightIcon from './icons/ChevronsRightIcon';
+import CheckSquareIcon from './icons/CheckSquareIcon';
 
 interface SidebarProps {
   subjects: Subject[];
@@ -14,6 +15,8 @@ interface SidebarProps {
   onMouseDownResize: (e: React.MouseEvent) => void;
   isMobile: boolean;
   onClose: () => void;
+  onGoHome: () => void;
+  onStartQuiz: () => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
@@ -26,6 +29,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   onMouseDownResize,
   isMobile,
   onClose,
+  onGoHome,
+  onStartQuiz,
 }) => {
   const [openSubjects, setOpenSubjects] = useState<Set<string>>(new Set());
   const [openThemes, setOpenThemes] = useState<Set<string>>(new Set());
@@ -86,9 +91,11 @@ const Sidebar: React.FC<SidebarProps> = ({
     >
       <div className="flex-1 p-4 overflow-y-auto overflow-x-hidden">
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-2xl font-bold text-[var(--color-text-primary)] whitespace-nowrap">
-            iPAS AI 學習日誌
-          </h1>
+          <button onClick={onGoHome} className="text-left group">
+            <h1 className="text-2xl font-bold text-[var(--color-text-primary)] whitespace-nowrap group-hover:text-[var(--color-accent)] transition-colors">
+              iPAS AI 學習日誌
+            </h1>
+          </button>
           <button
             onClick={isMobile ? onClose : onToggle}
             className="p-1 rounded-md hover:bg-[var(--color-bg-tertiary)]"
@@ -100,6 +107,15 @@ const Sidebar: React.FC<SidebarProps> = ({
         </div>
         <nav>
           <ul>
+            <li className="mb-3 pb-3 border-b border-[var(--color-border-primary)]">
+              <button
+                onClick={onStartQuiz}
+                className="w-full flex items-center text-left p-2 rounded-md hover:bg-[var(--color-bg-tertiary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+              >
+                <CheckSquareIcon className="w-5 h-5 mr-3 text-[var(--color-accent-amber)] flex-shrink-0" />
+                <span className="font-semibold text-lg">綜合刷題練習</span>
+              </button>
+            </li>
             {subjects.map(subject => (
               <li key={subject.id} className="mb-2">
                 <button

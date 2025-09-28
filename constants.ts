@@ -95,7 +95,7 @@ export const CURRICULUM_DATA: Subject[] = [
   },
   {
     id: 'L3',
-    name: '產業AI倫理與導入指引',
+    name: '產業導入指引及AI倫理',
     themes: [
       {
         id: 'L31',

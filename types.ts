@@ -1,3 +1,4 @@
+
 export interface Topic {
   id: string;
   name: string;
@@ -53,9 +54,17 @@ export interface ExamQuestion {
 export interface AdvancedSectionContent {
   advancedPrinciples: string;
   highLevelApplications: string;
+
   risksAndGovernance: string;
   extendedThinking: string;
   examSimulation: ExamQuestion[];
+}
+
+// FIX: Add missing QuizResult interface. This type is used for quiz history.
+export interface QuizResult {
+  themeName: string;
+  score: number;
+  total: number;
 }
 
 export type ContentViewMode = 'learn' | 'practice';

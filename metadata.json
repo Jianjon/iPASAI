@@ -1,5 +1,5 @@
 {
-  "name": "iPAS AI Exam Prep",
-  "description": "An AI-powered study assistant for the iPAS AI Intermediate Planner certification exam. It provides learning materials and generates practice questions for all curriculum topics.",
+  "name": "CarbonPath_iPAS AI Exam ",
+  "description": "一款 AI 驅動的學習輔助工具，專為 iPAS AI 規劃管理師 初階與中階認證考試 設計。它能幫助學習者整理重點知識、快速複習核心概念，並自動生成練習題，涵蓋完整的課綱範圍。",
   "requestFramePermissions": []
 }
